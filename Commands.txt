@@ -1,0 +1,46 @@
+﻿Bootloader Unlock:
+
+adb devices
+
+adb reboot bootloader
+
+fastboot devices
+
+fastboot flashing unlock
+
+fastboot reboot
+
+
+
+Root Commands
+
+adb devices
+
+adb reboot bootloader
+
+fastboot devices
+
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+
+fastboot flash boot boot.img
+
+fastboot reboot
+
+
+
+install twrp with pc
+
+adb devices
+
+adb reboot bootloader
+
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+fastboot flash recovery recovery.img
+
+fastboot reboot recovery
+
+uninstall application
+install adb and driver
+adb devices
+adb shell
+pm uninstall -k --user 0 
